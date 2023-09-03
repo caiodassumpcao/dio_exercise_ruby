@@ -82,6 +82,7 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
+    cpf_cnpj (0.5.0)
     crass (1.0.6)
     date (3.3.3)
     debug (1.8.0)
@@ -130,6 +131,7 @@ GEM
     nokogiri (1.15.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
+    os (1.1.4)
     psych (5.1.0)
       stringio
     public_suffix (5.0.3)
@@ -222,9 +224,11 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
+  cpf_cnpj (~> 0.5.0)
   debug
   importmap-rails
   jbuilder
+  os
   puma (~> 5.0)
   rails (~> 7.0.7, >= 7.0.7.2)
   selenium-webdriver
