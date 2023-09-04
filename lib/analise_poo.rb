@@ -20,3 +20,21 @@ def vantagens_poo()
 end
 
 vantagens_poo()
+
+def dominios()
+  tipos_dominio = ["Aplicaçao", "Negocio", "Arquitetura", "Base"]
+
+  tipos_dominio.each do |tipos|
+    case tipos
+    when "Aplicaçao"
+      puts "O dominio de arquitetura fornece abstraçoes para a arquitetura de hardware ou sofware utilizado"
+    when "Negocio"
+      puts "O dominio de negocio descreve classes inerentes a uma determinada area do conhecimento"
+    when "Arquitetura"
+      puts "O dominio de aplicaçao descreve classes 'cola', que servem para fazer as classes dos demais dominios funcionarem em um sistema"
+    when "Base"
+      puts ""
+    end
+
+  end
+end
