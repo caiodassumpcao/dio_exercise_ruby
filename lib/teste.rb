@@ -1,39 +1,23 @@
-require 'cpf_cnpj'
+def vantagens_poo()
+  vantagens = ["Confiável", "Oportuno", "Manutenível", "Extensível", "Reutilizável", "Natural"]
 
-def contagem_charac(char)
-  char =~ /[0-9]/
-end
-
-def format_cpf(cpf)
-  cpf = cpf.gsub(/(\d{3})(\d{3})(\d{3})(\d{2})/, '\1.\2.\3-\4')
-end
-
-def format_2_cpf(cpf)
-  new_cpf = ''
-  cpf.each_char do |char|
-    if contagem_charac(char)
-      new_cpf += char
-    else
-      puts "Caractere especial #{char} removido"
+  vantagens.each do |vantagem|
+    case vantagem
+    when "Confiável"
+      puts "#{vantagem}: Como as partes são isoladas, temos um software mais seguro. Esse isolamento permite que alteremos apenas uma das partes sem alterar as outras."
+    when "Oportuno"
+      puts "#{vantagem}: Como dividimos em partes, elas podem ser desenvolvidas em paralelo."
+    when "Manutenível"
+      puts "#{vantagem}: De fácil manutenção ou atualização. Ao modificar uma única parte, você pode beneficiar todas as partes que usam o mesmo objeto."
+    when "Extensível"
+      puts "#{vantagem}: O software deve sempre crescer, para que permaneça útil."
+    when "Reutilizável"
+      puts "#{vantagem}: Usar um objeto de um sistema antigo para desenvolver um novo sistema e reutilizar o mesmo objeto em diferentes partes do projeto."
+    when "Natural"
+      puts "#{vantagem}: Fácil de entender. A principal preocupação é a funcionalidade e não os detalhes."
     end
   end
-  format_cpf(new_cpf)
 end
 
-puts "Digite seu CPF: "
-cpf_1 = gets.chomp
-
-formatted_cpf = format_2_cpf(cpf_1)
-
-puts "CPF formatado: #{formatted_cpf}"
-
-def check_cpf(cpf)
-  if CPF.valid?(cpf)
-    return "CPF válido!"
-  else
-    return "CPF inválido!"
-  end
-end
-
-puts "Validação do CPF #{formatted_cpf}: "
-puts check_cpf(formatted_cpf)
+# Chame a função para imprimir as vantagens
+vantagens_poo()
