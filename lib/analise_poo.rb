@@ -162,9 +162,9 @@ teste_2 = Teste_2.new
 teste.global
 teste_2.outro_global
 puts $global
-
+puts "\n"
 class Usuario
-  @@usuario_count - 0
+  @@usuario_count = 0
   def add(name)
     puts "Usuario #{name} adicionado"
     @@usuario_count += 1
@@ -177,3 +177,21 @@ first_user.add('Caio')
 
 second_user = Usuario.new
 second_user.add('Jack')
+
+class Instanceuser
+  def add(name)
+    @name = name
+    puts "Usuario add"
+    ola
+  end
+
+  def ola
+    puts "Seja bem vindo(a), #{@name}!"
+  end
+end
+
+puts "\n"
+user_first = Instanceuser.new
+user_first.add('Caio 2')
+user_second = Instanceuser.new
+user_second.add('Jack 2')
