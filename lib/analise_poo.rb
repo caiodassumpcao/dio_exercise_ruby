@@ -109,3 +109,51 @@ rubya = Gato.new
 puts rubya.miar
 puts rubya.lamber
 puts rubya.comer
+
+puts "\n"
+
+class Trabalho
+  def trabalho
+    puts "Vamos começar a trabalhar!"
+  end
+
+end
+class Codar < Trabalho
+  def codando
+    puts "Voce esta no ambiente de desenvolvimento:"
+  end
+end
+class Rotular < Trabalho
+  def rotulando
+    puts "Voce esta no ambiente de rotulaçao:"
+  end
+end
+
+class Organizacao < Trabalho
+
+end
+
+rotulacao = Rotular.new
+codar = Codar.new
+organizacao = Organizacao.new
+
+organizacao.trabalho
+rotulacao.rotulando
+codar.codando
+
+puts "\n"
+
+class Teste
+  def global
+    $global = 0
+    puts $global
+  end
+end
+
+class Teste_2
+  def outro_global
+    @global += 1
+    puts @global
+  end
+end
+
