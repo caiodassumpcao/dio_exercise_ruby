@@ -195,3 +195,49 @@ user_first = Instanceuser.new
 user_first.add('Caio 2')
 user_second = Instanceuser.new
 user_second.add('Jack 2')
+
+#ATRIBUTOS
+puts "\n"
+puts "ATRIBUTOS -> "
+
+class Aluno
+  attr_accessor :nome, :idade, :cidade
+end
+
+aluno = Aluno.new
+
+aluno.nome = "Caio 3"
+aluno.idade = 24
+aluno.cidade = "Recife"
+
+puts "Aluno: #{aluno.nome}"
+puts "Idade: #{aluno.idade}"
+puts "Cidade: #{aluno.cidade}"
+puts "\n"
+
+#CONTRUTORES
+puts "\n"
+puts "CONSTRUTORES -> "
+puts "\n"
+
+class Pessoa
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
+  end
+
+  def conferencia
+    puts "Instancia de classe iniciada com os valores:"
+    puts "Nome: #{@nome}"
+    puts "Idade: #{@idade}"
+  end
+end
+
+pessoa1 = Pessoa.new('Caio 4', 24)
+pessoa2 = Pessoa.new('Jack 4', 3)
+
+pessoa1.conferencia
+pessoa2.conferencia
+
+
+
