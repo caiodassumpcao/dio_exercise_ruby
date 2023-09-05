@@ -152,8 +152,28 @@ end
 
 class Teste_2
   def outro_global
-    @global += 1
-    puts @global
+    $global += 1
+    puts $global
   end
 end
 
+teste = Teste.new
+teste_2 = Teste_2.new
+teste.global
+teste_2.outro_global
+puts $global
+
+class Usuario
+  @@usuario_count - 0
+  def add(name)
+    puts "Usuario #{name} adicionado"
+    @@usuario_count += 1
+    puts @@usuario_count
+  end
+end
+
+first_user = Usuario.new
+first_user.add('Caio')
+
+second_user = Usuario.new
+second_user.add('Jack')
