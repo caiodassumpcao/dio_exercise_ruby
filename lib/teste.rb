@@ -21,3 +21,16 @@ end
 
 # Chame a função para imprimir as vantagens
 vantagens_poo()
+
+def soma(array_1, array_2)
+  tamanho = array_1.length
+  array_final = []
+
+  tamanho.times do |n|
+    if n.even?
+      numero_index = array_1[n] + array_2[n]
+      array_final.push(numero_index)
+    end
+  end
+  array_final
+end
