@@ -1,13 +1,17 @@
+input1 = gets.chomp.split(',').map(&:to_i)
+input2 = gets.chomp.split(',').map(&:to_i)
 
-array1 = [1, 2, 3, 4, 5, 6]
-array2 = [1, 2, 3, 4, 5, 6]
 resultado = []
-for i in 0...array1.length
-  if i % 2 == 0
-    resultado << array1[i] + array2[i]
+
+# Verificando se os dois arrays têm o mesmo tamanho
+if input1.length == input2.length
+  for i in 0...input1.length
+    if i % 2 == 0
+      resultado << input1[i] + input2[i]
+    end
   end
+
+  puts resultado.join(',')
+else
+  puts "Os arrays de entrada têm tamanhos diferentes."
 end
-
-
-
-puts resultado.join(',')
