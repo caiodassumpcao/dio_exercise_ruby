@@ -1,33 +1,46 @@
+offset = 1
+limit = 0
+apiReturn = [
+  {
+    title: "Omelete",
+    ingredients: "Ovo, salsinha, sal, queijo",
+    recipe: "Quebre os ovos e os bata até ficar bem amarelinho. Em seguida misture a salsinha, o queijo e o sal a gosto. Leve ao fogo."
+  },
+  {
+    title: "Bolo de Chocolate",
+    ingredients: "Farinha, ovos, açúcar, chocolate em pó, óleo, fermento, leite",
+    recipe: "Misture a farinha, o açúcar e o chocolate em pó. Em seguida misture o leite, o óleo e os ovos. Após isso, misture os secos e os molhados e mexa bem. Para finalizar adicione o fermento, homogenize e leve ao forno."
+  },
+  {
+    title: "Brigadeiro",
+    ingredients: "Leite condensado, manteiga, chocolate em pó",
+    recipe: "Em uma panela misture todos os ingredientes. Misture tudo em fogo baixo sem parar de mexer, principalmente o que estiver no fundo para não queimar."
+  },
+  {
+    title: "Pão Caseiro",
+    ingredients: "Farinha, leite morno, água morna, óleo, açúcar, sal, ovos, fermento biológico",
+    recipe: "Misture o fermento com o açúcar, o sal, os ingredientes líquidos, os ovos e misture bem. Acrescente aos poucos a farinha e sove bem a massa formada. Deixe descansar por 1 hora, separe em pedaços e leve ao forno."
+  },
+  {
+    title: "Carne de Hamburguer",
+    ingredients: "Carne moída, sal, cebola, alho, oregano, ovo",
+    recipe: "Misture o ovo com a carne moída, o sal, o oregano. Acrescente o alho e a cebola refogados. Modele os bifes e leve a frigideira."
+  },
+  {
+    title: "Camafel Simples",
+    ingredients: "Leite condensado, manteiga, leite, nozes",
+    recipe: "Misture o leite condensado, a manteiga e o leite e leve ao fogo baixo e mexendo sem parar. Quando chegar ao ponto soltando da panela acrescente as nozes trituradas."
+  }
+]
 
-offset = gets.to_i
-limit = gets.to_i
+receita1 = { id: 1, title: "Omelete", ingredients: "Ovo, salsinha, sal, queijo", recipe: "Quebre os ovos e os bata até ficar bem amarelinho. Em seguida misture a salsinha, o queijo e o sal a gosto. Leve ao fogo." }
+receita2 = { id: 2, title: "Bolo de Chocolate", ingredients: "Farinha, ovos, açúcar, chocolate em pó, óleo, fermento, leite", recipe: "Misture a farinha, o açúcar e o chocolate em pó. Em seguida misture o leite, o óleo e os ovos. Após isso, misture os secos e os molhados e mexa bem. Para finalizar adicione o fermento, homogenize e leve ao forno." }
+receita3 = { id: 3, title: "Brigadeiro", ingredients: "Farinha, leite morno, água morna, óleo, açúcar, sal, ovos, fermento biológico", recipe: "Em uma panela misture todos os ingredientes. Misture tudo em fogo baixo sem parar de mexer, principalmente o que estiver no fundo para não queimar." }
+receita4 = { id: 4, title: "Pão Caseiro", ingredients: "Farinha, leite morno, água morna, óleo, açúcar, sal, ovos, fermento biológico", recipe: "Misture o fermento com o açúcar, o sal, os ingredientes líquidos, os ovos e misture bem. Acrescente aos poucos a farinha e sove bem a massa formada. Deixe descansar por 1 hora, separe em pedaços e leve ao forno." }
+receita5 = { id: 5, title: "Carne de Hamburguer", ingredients: "Carne moída, sal, cebola, alho, oregano, ovo", recipe: "Misture o ovo com a carne moída, o sal, o oregano. Acrescente o alho e a cebola refogados. Modele os bifes e leve a frigideira." }
+receita6 = { id: 6, title: "Camafel Simples", ingredients: "Leite condensado, manteiga, leite, nozes", recipe: "Misture o leite condensado, a manteiga e o leite e leve ao fogo baixo e mexendo sem parar. Quando chegar ao ponto soltando da panela acrescente as nozes trituradas." }
 
-const apiReturn = [
-  {title: "Omelete",
-   ingredients: "Ovo, salsinha, sal, queijo",
-   recipe: `Quebre os ovos e os bata até ficar bem amarelinho. Em seguida misture a salsinha, o queijo e o sal a gosto. Leve ao fogo.`
-  },
-  {title: "Bolo de Chocolate",
-   ingredients: "Farinha, ovos, açúcar, chocolate em pó, óleo, fermento, leite",
-   recipe: `Misture a farinha, o açúcar e o chocolate em pó. Em seguida misture o leite, o óleo e os ovos. Após isso, misture os secos e os molhados e mexa bem. Para finalizar adicione o fermento, homogenize e leve ao forno.`
-  },
-  {title: "Brigadeiro",
-   ingredients: "Leite condensado, manteiga, chocolate em pó",
-   recipe: `Em uma panela misture todos os ingredientes. Misture tudo em fogo baixo sem parar de mexer, principalmente o que estiver no fundo para não queimar.`
-  },
-  {title: "Pão Caseiro",
-   ingredients: "Farinha, leite morno, água morna, óleo, açúcar, sal, ovos, fermento biológico",
-   recipe: `Misture o fermento com o açúcar, o sal, os ingredientes líquidos, os ovos e misture bem. Acrescente aos poucos a farinha e sove bem a massa formada. Deixe descansar por 1 hora, separe em pedaços e leve ao forno.`
-  },
-  {title: "Carne de Hamburguer",
-   ingredients: "Carne moída, sal, cebola, alho, oregano, ovo",
-   recipe: `Misture o ovo com a carne moída, o sal, o oregano. Acrescente o alho e a cebola refogados. Modele os bifes e leve a frigideira.`
-  },
-  {title: "Camafel Simples",
-   ingredients: "Leite condensado, manteiga, leite, nozes",
-   recipe: `Misture o leite condensado, a manteiga e o leite e leve ao fogo baixo e mexendo sem parar. Quando chegar ao ponto soltando da panela acrescente as nozes trituradas.`
-  }]
+case recipes
+when 0
 
-class Receita
-  def Receita.title
 end
