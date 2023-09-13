@@ -14,6 +14,15 @@ end
 
 def contagem_charac(char)
   char =~ /[0-9]/
+enddb
+
+def teste
+  c = 4
+  if c > 0
+    c += 1
+    puts c
+    puts ""
+  end
 end
 
 def format_2_cpf(cpf)
