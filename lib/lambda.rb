@@ -19,3 +19,6 @@ t_lambda = -> (names){ names.each { |name |puts name}}
 
 
 t_lambda.call(names)
+
+
+puts "Lambda com parametros "
