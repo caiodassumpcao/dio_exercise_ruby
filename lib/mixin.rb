@@ -1,5 +1,5 @@
 module ImpressaoDecorada
-  def imprimir text
+  def imprimir(text)
     decoracao = '#' * 50
     puts decoracao
     puts text
@@ -26,6 +26,25 @@ module Bracos
     imprimir 'Jab de direita'
   end
 
-  def
+  def jab_de_esquerda
+    imprimir 'Jab de esquerda'
+  end
+
+  def gancho
+    imprimir 'Gancho'
+  end
 end
 
+class LutadoraX
+  include Pernas
+  include Bracos
+end
+
+class LutadorY
+  include Pernas
+end
+
+lutadorx = LutadoraX.new
+lutadorx.chute_frontal
+lutadory = LutadorY.new
+lutadory.chute_lateral
