@@ -26,3 +26,8 @@ end
 
 calc = Calculadora.new
 puts calc.soma(5, 3)
+puts calc.subtracao(10, 4)
+puts calc.multiplicacao(6, 7)
+puts calc.divisao(9, 2)
+puts calc.divisao(6, 0)
+puts calc.divisao(5, 5)
