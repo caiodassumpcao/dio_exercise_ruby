@@ -1,4 +1,4 @@
-#regex = Expressoes regulares
+# REGEX = Expressão regular de busca
 # Permite procurar coisas em Strings (Telefone, cpf, etc)
 
 #Maneiras de representar o REGEX:
@@ -20,6 +20,23 @@ phrase = "Olá, como você vai?"
 match_data = /como/.match(phrase)
 puts match_data
 
-# saber se vem antes da palavra
+# saber oque vem antes da palavra (pre.match)
 puts match_data.pre_match
 
+# Saber oque vem depois da palavra (post.match)
+puts match_data.post_match
+
+# Procurar caracteres especiais:
+# Necessário colocar uma contra-barra(\) antes
+puts /\?/.match('Tudo bem?')
+
+
+# MATH = Expressão regular para funções matemáticas
+
+# Raiz quadrada
+puts Math.sqrt(16)
+# Raiz quadrada
+puts Math.cbrt(64)
+
+# Raiz quadrada
+puts Math.sqrt(256)
