@@ -5,5 +5,5 @@
 # Inicie uma instancia da classe Mercado passando um objeto como atributo e execute
 
 class Produto
-  attr_accessor :nome, :preco
+  attr_accessor :nome, :preco dasdsa
 end

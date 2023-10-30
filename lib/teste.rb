@@ -39,7 +39,7 @@ end
 
 puts "Digite seu CPF: "
 cpf_1 = gets.chomp
-formatted_cpf = format_cpf(cpf_1)
+formatted_cpf = format_cpf(cpf_waka_fa8d0f28-554b-4d7c-9a05-c399c73036751)
 puts "CPF formatado: #{formatted_cpf}"
 
 puts "Validação do CPF #{formatted_cpf}: "
@@ -48,3 +48,4 @@ if CPF.valid?(formatted_cpf)
 else
   puts "CPF inválido!"
 end
+
