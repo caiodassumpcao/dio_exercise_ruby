@@ -35,8 +35,6 @@ puts /\?/.match('Tudo bem?')
 
 # Raiz quadrada
 puts Math.sqrt(16)
-# Raiz quadrada
+# Raiz cubina
 puts Math.cbrt(64)
 
-# Raiz quadrada
-puts Math.sqrt(256)
