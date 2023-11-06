@@ -8,3 +8,8 @@ exemplo = Net::HTTP.get('example.com', '/index.html')
 File.open('example.html', 'w') do |file|
   file.puts(exemplo)
 end
+
+def teste
+
+  puts
+end
