@@ -24,8 +24,19 @@
 
 puts "**Minha lista de Compras**"
 
-file = File.open('lista.txt')
-file.each do |line|
-  puts line
+file_path = 'lista.txt'
+
+if File.exist?(file_path)
+  File.open(file_path, 'r') do |file|
+    file.each_line do |line|
+      puts line
+    end
+  end
+else
+  puts "O arquivo 'lista.txt' não foi encontrado em '#{file_path}'."
 end
 
+File.open('lista.txt', 'a') do |line|
+  line.puts ('Laranja')
+  line.puts ('Granola')
+end
