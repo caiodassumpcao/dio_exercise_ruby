@@ -29,14 +29,18 @@ if response.code == '200'
 
   # Extrair info de tabelas
   table = doc.css('table')
+  if table.any?
+    puts "Tabela encontrada:"
+    table.css('tr').each do |row|
+      cells = row.css('td')
 
-  table.css('tr').each do |row|
-    cells = row.css('td')
-
-    puts cells[0].text.strip if cells[0]
+      if cells[0]
+        puts cells[0].text.strip
+      end
+    end
+  else
+    puts "Nenhuma tabela encontrada na página."
   end
+else
+  puts
 end
-
-
-
-
